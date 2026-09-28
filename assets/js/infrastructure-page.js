@@ -107,32 +107,17 @@
     render(arr);
   }
 
-  // API base resolver (same-origin localhost:8080 -> 127.0.0.1:8080)
-  const saved = localStorage.getItem('apiBase') || '';
-  const candidates = [saved, '', 'http://localhost:8080', 'http://127.0.0.1:8080'].filter(Boolean);
-  async function tryBase(base){
-    const url = (base ? base : '') + '/api/status';
-    try{ const r = await fetch(url, { cache:'no-store' }); if(!r.ok) throw 0; const j = await r.json(); return j && j.ok===true ? base : null; }catch(e){ return null; }
-  }
-  async function resolveApiBase(){
-    for (const base of candidates){ const ok = await tryBase(base); if (ok!==null){ if(base) localStorage.setItem('apiBase', base); return base; } }
-    for (const base of ['http://localhost:8080','http://127.0.0.1:8080']){ const ok = await tryBase(base); if (ok!==null){ localStorage.setItem('apiBase', base); return base; } }
-    return null;
-  }
-
   async function fetchConnectivity(){
     try{
       setStatus('Loading details…', 'warn');
-      const base = await resolveApiBase();
-      if(!base && location.port !== '8080') throw new Error('API base not resolved');
-      const endpoint = (base?base:'') + '/api/infrastructure';
-      const r = await fetch(endpoint, { cache:'no-store' });
+      // The Express server serves both this page and the API on the same origin.
+      const r = await fetch('/api/infrastructure', { cache:'no-store' });
       if(!r.ok) throw new Error('HTTP ' + r.status);
       const json = await r.json();
 
       if (window.DataGuard && typeof window.DataGuard.validateInfrastructure === 'function'){
         const v = window.DataGuard.validateInfrastructure(json);
-        if(!v.ok){ setStatus('Data validation failed', 'error'); return; }
+        if(!v.ok){ setStatus('Data validation failed', 'error'); return false; }
         RAW = v.data;
       } else {
         RAW = Array.isArray(json) ? json : [];
@@ -140,9 +125,11 @@
 
       buildCategoryChips(RAW);
       applyFilters();
-      setStatus('');
+      setStatus('Connected', '');
+      return true;
     }catch(e){
       setStatus('API not connected', 'error');
+      return false;
     }
   }
 
@@ -152,9 +139,9 @@
 
   document.addEventListener('DOMContentLoaded', async () => {
     setStatus('API not connected', 'error');
-    let ok = false;
-    try{ await fetchConnectivity(); ok = true; }catch(_){}
-    if (ok) return;
-    setInterval(fetchConnectivity, 4000);
+    if (await fetchConnectivity()) return;
+    const retry = setInterval(async () => {
+      if (await fetchConnectivity()) clearInterval(retry);
+    }, 4000);
   });
 })();

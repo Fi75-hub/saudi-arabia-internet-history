@@ -7,7 +7,7 @@ let CURRENT_POL=null;
 async function initPolicies(){
   const status = document.getElementById('pol-status');
   const wrap = document.getElementById('policies');
-  let data = await await DataGuard.fetchAny(['/api/policies','../data/policies.json','../policies.json'], POL_FALLBACK, arr=>DataGuard.validatePolicies(arr));
+  let data = await DataGuard.fetchAny(['../data/policies.json'], POL_FALLBACK, arr=>DataGuard.validatePolicies(arr));
   status.textContent = 'Loaded policies';
   wrap.innerHTML='';
   data.sort((a,b)=>a.year-b.year).forEach((it,i)=>{

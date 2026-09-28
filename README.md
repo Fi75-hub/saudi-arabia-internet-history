@@ -26,7 +26,7 @@ Open [localhost:8080](http://localhost:8080). The same server serves the pages a
 
 The **Connectivity** page is at [localhost:8080/pages/connectivity.html](http://localhost:8080/pages/connectivity.html).
 
-Use port **8080** for the supplied frontend configuration. The server accepts a `PORT` environment variable, but the existing connectivity client also probes localhost on port 8080. Running on another port or deploying remotely requires updating that client configuration.
+The default port is **8080**. To use another port, set the `PORT` environment variable before starting the server. The pages and API use the same address.
 
 ## Project structure
 
@@ -50,22 +50,21 @@ package.json               Dependencies and start commands
 | GET | `/api/ping` | Basic availability response |
 | GET | `/api/infrastructure` | Connectivity records |
 | GET | `/api/contributions` | Contributions stored in the current server process |
-| POST | `/api/contribute` | Accept a contribution containing `year`, `title` and optional `details` |
+| POST | `/api/contribute` | Accept a contribution containing numeric `year`, `title` and optional `details` |
 
-Contributions are stored in memory and disappear when the server restarts. This is a local demonstration API with no authentication or persistent database. The API is not a production submission service.
+Years must be integers from 1980 through next year, and titles cannot be empty. Contributions are stored in memory and disappear when the server restarts. This is a local demonstration API with no authentication or persistent database. The API is not a production submission service.
 
 ## Context and credits
 
-Developed by Faizan Ilyas as a University of London **Web Development (CM1040)** coursework project. The supplied archive does not identify its assessment stage, so this repository does not assign a midterm or final label.
+Developed by Faizan Ilyas as a University of London **Web Development (CM1040)** coursework project.
 
-The site uses [Express](https://expressjs.com/). Existing third-party media links, source URLs and credit metadata remain in `data/mediaRegistry.json`; the audio note remains in `assets/audio/README.txt`. These entries record the original project's attribution and have not been independently verified. Some media is loaded from external sites and requires internet access. No repository-wide license has been added.
+The site uses [Express](https://expressjs.com/). Existing third-party media links, source URLs and credit metadata remain in `data/mediaRegistry.json`; the audio note remains in `assets/audio/README.txt`. Some media is loaded from external sites and requires internet access.
 
 ## Current limitations
 
 - Historical content and statistics are static coursework data and should not be treated as current figures.
 - External images or audio can become unavailable; the site includes some local assets and fallbacks.
 - There is no offline service worker.
-- The application has no automated test suite. It is presented as a student web-development project.
 
 ## Preview
 

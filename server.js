@@ -137,12 +137,12 @@ app.get('/api/infrastructure', (req, res) => {
 // Contributions
 app.post('/api/contribute', (req, res) => {
   const body = req.body || {};
-  const year = Number(body.year);
+  const year = body.year;
   const title = typeof body.title === 'string' ? body.title.trim() : '';
   const details = typeof body.details === 'string' ? body.details.trim() : '';
 
-  if (!Number.isFinite(year) || !title) {
-    return res.status(400).json({ error: 'Invalid payload. Expect {year:number, title:string, details?:string}' });
+  if (!Number.isInteger(year) || year < 1980 || year > new Date().getFullYear() + 1 || !title) {
+    return res.status(400).json({ error: 'Invalid payload. Use an integer year from 1980 through next year, a non-empty title, and optional details.' });
   }
   const item = { year, title, details, createdAt: new Date().toISOString() };
   memoryContribs.push(item);

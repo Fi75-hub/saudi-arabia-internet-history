@@ -1,7 +1,8 @@
 
 // Media injector for highlight cards + anthem hero
 (function(){
-  // ---- Inline fallback registry (used if JSON fetch fails) ----
+  const siteRoot = new URL("../../", document.currentScript.src);
+  // Local media used when the registry is unavailable.
   const FALLBACK = {
     timeline_by_year: {
       "1993": { img: "assets/img/y1993.png", alt: "Academic network pilots" },
@@ -29,7 +30,7 @@
   };
 
   function fetchRegistry(cb){
-    const tries = ["data/mediaRegistry.json","../data/mediaRegistry.json","../../data/mediaRegistry.json","/data/mediaRegistry.json"];
+    const tries = [new URL("data/mediaRegistry.json", siteRoot).href];
     (function next(i){
       if(i>=tries.length) return cb(FALLBACK);
       fetch(tries[i], {cache:"no-store"})
@@ -46,12 +47,26 @@
 
   function renderImage(slot, url, alt){
     if(!slot) return;
-    slot.innerHTML = url ? `<figure><img src="${url}" alt="${alt||''}" loading="lazy" decoding="async" style="width:100%;height:240px;object-fit:cover;border-radius:14px"></figure>` : '';
+    slot.replaceChildren();
+    if (!url) return;
+    const figure = document.createElement('figure');
+    const img = document.createElement('img');
+    img.src = new URL(url, siteRoot).href;
+    img.alt = alt || '';
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    img.style.cssText = 'width:100%;height:240px;object-fit:cover;border-radius:14px';
+    img.addEventListener('error', () => {
+      img.src = new URL('assets/img/y2025.png', siteRoot).href;
+      img.alt = 'Saudi Arabia illustration';
+    }, {once: true});
+    figure.appendChild(img);
+    slot.appendChild(figure);
   }
 
   function bootTimeline(reg){
     const aside = document.getElementById('tl-aside');
-    const title = document.getElementById('tl-title');
+    const title = document.getElementById('tl-aside-title');
     if(!aside) return;
     let slot = aside.querySelector('.media-slot');
     if(!slot){
@@ -74,7 +89,7 @@
 
   function bootPolicies(reg){
     const aside = document.getElementById('pol-aside');
-    const title = document.getElementById('pol-title');
+    const title = document.getElementById('pol-aside-title');
     if(!aside) return;
     let slot = aside.querySelector('.media-slot');
     if(!slot){

@@ -30,7 +30,7 @@ function animateCounters(){
   });
 }
 async function initStats(){
-  const data = await await DataGuard.fetchAny(['/api/stats','../data/stats.json','../stats.json'], STATS_FALLBACK, obj=>DataGuard.validateStats(obj));
+  const data = await DataGuard.fetchAny(['../data/stats.json'], STATS_FALLBACK, obj=>DataGuard.validateStats(obj));
   const counters = document.getElementById('counters');
   counters.innerHTML = `
     <div class="stat fadein"><h3>Users 2000</h3><div class="counter" data-target="${data.users.find(u=>u.year===2000)?.value||0}">0</div></div>

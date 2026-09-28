@@ -1,5 +1,5 @@
 
-// Data fetch + validation helpers (human-written)
+// Data fetch and validation helpers
 (function(global){
   // Simple type utils
   function isArray(x){ return Array.isArray(x); }

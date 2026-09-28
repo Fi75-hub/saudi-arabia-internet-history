@@ -13,7 +13,7 @@ async function initTimeline(){
   const search = document.getElementById('tl-search');
   const filter = document.getElementById('tl-year');
   try{
-    TL_DATA = await await DataGuard.fetchAny(['/api/timeline','../data/timeline.json','../timeline.json'], TL_FALLBACK, arr=>DataGuard.validateTimeline(arr));
+    TL_DATA = await DataGuard.fetchAny(['../data/timeline.json'], TL_FALLBACK, arr=>DataGuard.validateTimeline(arr));
     status.textContent = 'Loaded timeline data';
   }catch(e){
     status.textContent = 'Using built-in timeline data';

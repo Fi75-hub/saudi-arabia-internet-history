@@ -4,7 +4,7 @@ async function initHome(){
     users:[{year:2000,value:200000},{year:2010,value:11000000},{year:2020,value:30000000},{year:2025,value:33900000}],
     penetration:{year:2025,percent:99}
   };
-  const stats = await DataGuard.fetchAny(['/api/stats','data/stats.json','./data/stats.json'], fallback, obj=>DataGuard.validateStats(obj));
+  const stats = await DataGuard.fetchAny(['data/stats.json'], fallback, obj=>DataGuard.validateStats(obj));
   const users2025 = (stats.users.find(u=>u.year===2025)||stats.users[stats.users.length-1]).value;
   const pen2025 = stats.penetration?.percent ?? 99;
   animateCount(document.getElementById('kpi-users'), users2025);
