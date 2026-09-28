@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Statistics • Internet in Saudi Arabia</title>
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <script defer src="../assets/js/main.js"></script>
+  <script defer src="../assets/js/validator.js"></script>
+
+  <script defer src="../assets/js/charts.js"></script>
+  <script defer src="../assets/js/stats.js"></script></head>
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+  <header><h1>Statistics & Visuals</h1></header>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="policies.html">Policies</a>
+    
+    <a href="connectivity.html">Connectivity</a>
+<a class="active" href="stats.html">Statistics</a>
+      <button id="themeToggle" class="btn" style="margin-left:auto">Light mode</button>
+      <button id="contrastBtn" class="btn">Contrast</button>
+</nav>
+  <main id="main">
+    <section id="counters" class="stats"></section>
+    <section class="grid" style="margin-top:16px">
+      <div class="card"><h2>User Growth</h2><canvas id="usersChart" width="980" height="360"></canvas></div>
+      <div class="card"><h2>Mobile Speed (Mbps)</h2><canvas id="speedChart" width="980" height="360"></canvas></div>
+      <div class="card"><h2>Penetration</h2><div class="pieGrid"><canvas id="penetrationChart" width="360" height="360" aria-label="Donut chart showing internet penetration"></canvas><div class="pieInfo"><p style="margin-top:0;margin-bottom:8px"><strong>Near‑universal access</strong></p><p style="margin:0">This donut shows how close overall adoption is to full coverage in <span id="penYear">2025</span>. A 99% rate means services can plan for digital‑first delivery while still supporting people who are offline.</p></div></div></div>
+    </section>
+  </main>
+  <footer>© 2025 Internet in Saudi Arabia Project</footer>
+  <button class="backtop" aria-label="Back to top">↑</button>
+  </body>
+</html>

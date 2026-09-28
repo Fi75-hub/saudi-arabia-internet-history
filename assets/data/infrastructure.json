@@ -1,0 +1,14 @@
+[
+  {
+    "category": "Backbone & IXPs",
+    "year": 1993,
+    "title": "Academic Backbone & Early Exchange",
+    "details": "Initial research backbone; early peering matured as public access launched in 1999."
+  },
+  {
+    "category": "International Gateways & Fiber",
+    "year": 2001,
+    "title": "SEA-ME-WE & Regional Cables",
+    "details": "Submarine cable landings increased international capacity; terrestrial fiber expanded."
+  }
+]

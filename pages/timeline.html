@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Timeline • Internet in Saudi Arabia</title>
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <script defer src="../assets/js/main.js"></script>
+  <script defer src="../assets/js/validator.js"></script>
+
+  <script defer src="../assets/js/charts.js"></script>
+  <script defer src="../assets/js/timeline.js"></script>  <link rel="stylesheet" href="../assets/css/media.css">
+</head>
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+  <header><h1>Timeline</h1></header>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a class="active" href="timeline.html">Timeline</a>
+    <a href="policies.html">Policies</a>
+    
+    <a href="connectivity.html">Connectivity</a>
+<a href="stats.html">Statistics</a>
+      <button id="themeToggle" class="btn" style="margin-left:auto">Light mode</button>
+      <button id="contrastBtn" class="btn">Contrast</button>
+</nav>
+  <main id="main">
+    <section class="card">
+      <div class="tools">
+        <input id="tl-search" class="input" type="search" placeholder="Search by year, title or details…" />
+        <select id="tl-year" class="input"></select>
+        <button class="btn" onclick="document.querySelectorAll('.details').forEach(d=>d.style.display='block');document.querySelectorAll('.year').forEach(h=>h.classList.add('open'));">Expand all</button>
+        <button class="btn alt" onclick="document.querySelectorAll('.details').forEach(d=>d.style.display='none');document.querySelectorAll('.year').forEach(h=>h.classList.remove('open'));">Collapse all</button>
+      </div>
+      <div class="grid" style="grid-template-columns:1.25fr .75fr; gap:16px;"><aside id="tl-aside" class="card align-row-1" style="grid-column:2; position:sticky; top:90px; align-self:start; grid-row:1"><h2 id="tl-aside-title" style="margin-top:0">Highlight</h2><p id="tl-aside-kicker" class="kicker">Open a year to see a quick takeaway</p><div id="tl-aside-body"><p>When you choose a year the panel shows a one line summary and a small metric.</p></div></aside><div id="timeline" class="accordion align-row-1" style="grid-column:1; grid-row:1"></div>
+      <p id="tl-status" class="small"></p></div></section>
+  </main>
+  <footer>© 2025 Internet in Saudi Arabia Project</footer>
+  <button class="backtop" aria-label="Back to top">↑</button>
+    <script src="../assets/js/media.js" defer></script>
+</body>
+</html>

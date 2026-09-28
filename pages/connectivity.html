@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Connectivity • Internet in Saudi Arabia</title>
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <script defer src="../assets/js/main.js"></script>
+  <script defer src="../assets/js/validator.js"></script>
+  <script defer src="../assets/js/infrastructure-page.js"></script>
+  <link rel="stylesheet" href="../assets/css/media.css">
+</head>
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+  <header><h1>Connectivity</h1></header>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="policies.html">Policies</a>
+    <a class="active" href="connectivity.html">Connectivity</a>
+    <a href="stats.html">Statistics</a>
+      <button id="themeToggle" class="btn" style="margin-left:auto">Light mode</button>
+      <button id="contrastBtn" class="btn">Contrast</button>
+  </nav>
+
+  <main id="main">
+    <section class="card">
+      <h2>Status</h2>
+      <p id="infra-status" class="status error">API not connected</p>
+      <p class="hint">Start the server: <code>node server.js</code> (in the project root). This page will auto‑retry and load details.</p>
+    <div id="infra-debug" style="margin-top:6px;font-size:12px;opacity:.7;display:none" aria-hidden="true"></div>
+    </section>
+
+    
+    <section class="card">
+      <h2>Explore</h2>
+      <div class="toolbar" role="region" aria-label="Infrastructure controls">
+        <input id="infra-search" type="search" placeholder="Search title or details…" aria-label="Search infrastructure" />
+        <select id="infra-sort" aria-label="Sort">
+          <option value="year-asc">Year ↑</option>
+          <option value="year-desc">Year ↓</option>
+          <option value="title-asc">Title A→Z</option>
+          <option value="title-desc">Title Z→A</option>
+        </select>
+        <label class="chk"><input id="infra-group" type="checkbox" /> Group by decade</label>
+        <div id="infra-cats" class="chip-row" aria-label="Categories"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Network Building Blocks</h2>
+      <div id="infra-list" class="grid" style="grid-template-columns:1fr 1fr; gap:16px"></div>
+    </section>
+  </main>
+
+  <footer><small>&copy; 2025 — Coursework project</small></footer>
+</body>
+</html>

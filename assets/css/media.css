@@ -1,0 +1,9 @@
+
+/* Small additions for images under highlight cards and the home anthem video */
+.media-slot{margin-top:12px;border-radius:14px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.18);background:var(--surface,rgba(255,255,255,.06))}
+.media-slot img{width:100%;height:240px;display:block;object-fit:cover}
+@media (max-width: 768px){.media-slot img{height:200px}}
+
+.hero-video{position:relative;margin:18px auto;border-radius:16px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.25)}
+.hero-video video{width:100%;height:auto;display:block}
+.hero-video .fallback{position:absolute;inset:auto 12px 12px auto;background:rgba(0,0,0,.5);color:#fff;padding:6px 10px;border-radius:10px;font-size:.85rem}

@@ -1,0 +1,103 @@
+{
+  "timeline_by_year": {
+    "1993": {
+      "title": "Academic network pilots",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Life_at_kfupm.jpg/1280px-Life_at_kfupm.jpg",
+      "alt": "KFUPM campus buildings in Dhahran",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Life_at_kfupm.jpg",
+      "license": "CC BY-SA 4.0"
+    },
+    "1999": {
+      "title": "Public access takes off",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/6/62/ISO_7001_PI_CF_011.svg",
+      "alt": "Public Internet access pictogram",
+      "source_url": "https://commons.wikimedia.org/wiki/File:ISO_7001_PI_CF_011.svg",
+      "license": "Public Domain (ISO 7001 pictogram)"
+    },
+    "2001": {
+      "title": "Independent regulator",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Communications%2C_Space_and_Technology_Commission_Logo.svg/512px-Communications%2C_Space_and_Technology_Commission_Logo.svg.png",
+      "alt": "CST (formerly CITC) emblem",
+      "source_url": "https://en.wikipedia.org/wiki/Communications,_Space_and_Technology_Commission",
+      "license": "Logo as informational use on Wikipedia (check local fair-use); use only for reference in report"
+    },
+    "2017": {
+      "title": "Cybersecurity baseline",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Cybersecurity.png",
+      "alt": "Abstract cybersecurity lock graphic",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cybersecurity.png",
+      "license": "CC0 1.0"
+    },
+    "2019": {
+      "title": "5G commercial launch",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Vonr_and_5g_on_a_phone_with_OneUI_5.1.png/640px-Vonr_and_5g_on_a_phone_with_OneUI_5.1.png",
+      "alt": "Phone status bar showing VoNR and 5G indicators",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vonr_and_5g_on_a_phone_with_OneUI_5.1.png",
+      "license": "CC BY-SA 4.0"
+    },
+    "2021": {
+      "title": "Digital Government push",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/35/Government_Building_icon.svg",
+      "alt": "Government building icon",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Government_Building_icon.svg",
+      "license": "CC0 1.0"
+    },
+    "2025": {
+      "title": "Gigabit era normal",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Riyadh_Skyline_2017.jpg/1280px-Riyadh_Skyline_2017.jpg",
+      "alt": "Riyadh skyline at night",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Riyadh_Skyline_2017.jpg",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "policies_by_year": {
+    "1997": {
+      "title": "KACST Internet Services Unit (ISU)",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Riyadh_Skyline_2017.jpg/1280px-Riyadh_Skyline_2017.jpg",
+      "alt": "Riyadh skyline\u2014symbolic for national backbone operated by KACST",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Riyadh_Skyline_2017.jpg",
+      "license": "CC BY-SA 4.0"
+    },
+    "2001": {
+      "title": "Communications regulator established (CITC/CST)",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Communications%2C_Space_and_Technology_Commission_Logo.svg/512px-Communications%2C_Space_and_Technology_Commission_Logo.svg.png",
+      "alt": "CST emblem",
+      "source_url": "https://en.wikipedia.org/wiki/Communications,_Space_and_Technology_Commission",
+      "license": "Logo as informational use on Wikipedia (check local fair-use); use only for reference in report"
+    },
+    "2017": {
+      "title": "National Cybersecurity Authority",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Cybersecurity.png",
+      "alt": "Lock graphic for cybersecurity",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cybersecurity.png",
+      "license": "CC0 1.0"
+    },
+    "2019": {
+      "title": "Cloud First Policy",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/5/56/Cloud-Security.svg",
+      "alt": "Cloud security icon",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cloud-Security.svg",
+      "license": "CC0 1.0"
+    },
+    "2021": {
+      "title": "Digital Government Authority (DGA)",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/35/Government_Building_icon.svg",
+      "alt": "Government building icon",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Government_Building_icon.svg",
+      "license": "CC0 1.0"
+    }
+  },
+  "defaults": {
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/640px-Flag_of_Saudi_Arabia.svg.png",
+    "alt": "Saudi flag watermark",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Flag_of_Saudi_Arabia.svg",
+    "license": "Public domain (government work)"
+  },
+  "hero_video": {
+    "poster": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg",
+    "gif": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Animated-Flag-Saudi-Arabia.gif",
+    "anthem_ogg": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Aash_Al_Maleek_instrumental.ogg",
+    "anthem_mp3": "https://archive.org/download/us-navy-band-national-anthems-public-domain/Saudi%20Arabia%20%282008%29.mp3",
+    "credit": "US Navy Band (public domain) + Wikimedia Commons (flag)"
+  }
+}

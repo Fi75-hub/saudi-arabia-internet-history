@@ -1,0 +1,42 @@
+[
+  {
+    "year": 1997,
+    "policy": "KACST Internet Services Unit",
+    "impact": "The national gateway and coordination of providers move under KACST. A single hub improves routing stability and allows consistent security policy. Operators interconnect at the hub and share traffic management rules. The arrangement makes the public rollout more predictable for users and firms."
+  },
+  {
+    "year": 2001,
+    "policy": "Independent communications regulator",
+    "impact": "The regulator receives legal and financial independence and a clear mandate. It licenses providers manages spectrum and enforces service quality. Complaint handling and penalties are defined so consumers have a path to resolve issues. The market becomes more competitive and planning improves."
+  },
+  {
+    "year": 2003,
+    "policy": "MCIT and national e‑government",
+    "impact": "MCIT leads policy and shared platforms for online public services. The Yesser program sets standards for identity payments and data exchange. Agencies start to publish processes and track requests on the web. Reuse of common components lowers cost and speeds delivery."
+  },
+  {
+    "year": 2017,
+    "policy": "National Cybersecurity Authority",
+    "impact": "NCA issues baseline controls and sector frameworks for government and operators. It coordinates readiness and incident reporting and runs training programs. Security operations centers expand and adopt common toolsets. Public entities align on response playbooks and audits."
+  },
+  {
+    "year": 2019,
+    "policy": "Cloud First policy",
+    "impact": "Public bodies prefer cloud after formal risk review. The policy encourages investment in local data centers and resilient hosting. Projects plan migration paths and address data residency and continuity. Procurement templates evolve so agencies can compare providers on equal terms."
+  },
+  {
+    "year": 2021,
+    "policy": "Digital Government Authority",
+    "impact": "DGA governs standards for secure digital service delivery and data sharing. Portals and APIs adopt common rules so citizens have a consistent experience. Monitoring improves because quality indicators are measured across agencies. Teams share code and patterns to avoid duplicate work."
+  },
+  {
+    "year": 2021,
+    "policy": "National data and AI initiatives",
+    "impact": "SDAIA develops governance platforms and talent tracks that support responsible AI. Agencies use analytics and machine learning to improve processing times and accuracy. Guidance helps teams evaluate models and manage risk. Skills programs grow the pool of practitioners across the public sector."
+  },
+  {
+    "year": 2025,
+    "policy": "Vision 2030 digital benchmarks",
+    "impact": "Targets for coverage speed and digital economy share guide the next stage of delivery. Agencies and firms focus on reliability local capability and cyber resilience. Progress is tracked with public indicators that show real outcomes. Results inform the next wave of investment and training."
+  }
+]

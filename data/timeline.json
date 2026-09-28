@@ -1,0 +1,107 @@
+[
+  {
+    "year": 1993,
+    "title": "First academic connection",
+    "details": "King Fahd University of Petroleum and Minerals links its campus network to the global internet. The link is modest in speed but reliable for email and file transfer. Researchers exchange software and datasets with partners abroad and publish the first pages that describe local projects. Interest grows inside other universities and ministries that want similar access."
+  },
+  {
+    "year": 1994,
+    "title": ".sa domain administration",
+    "details": "SaudiNIC begins to manage the country domain under KACST. The team publishes clear rules for registrations and runs authoritative name servers. Government agencies and universities register memorable .sa names and move content from internal systems to the web. Public awareness rises as more addresses appear in print and on campus."
+  },
+  {
+    "year": 1995,
+    "title": "Early telemedicine over T1",
+    "details": "A dedicated circuit connects King Faisal Specialist Hospital with Johns Hopkins for clinical collaboration. Doctors exchange images and case summaries and they test remote seminars for training. The project proves that specialized care can benefit from connectivity even at modest speeds. Hospital leadership invests in people and processes to keep the service running."
+  },
+  {
+    "year": 1997,
+    "title": "Single gateway and oversight",
+    "details": "The state assigns supervision of international gateways to KACST and its Internet Services Unit. Providers interconnect through a controlled hub and follow common technical policies. The change improves stability and makes security administration practical at scale. It also prepares the network for wider public service in the following years."
+  },
+  {
+    "year": 1998,
+    "title": "Licensing and last mile buildout",
+    "details": "Local providers complete licensing and expand dial up access in major cities. Help desks and billing systems are set up to handle new subscribers. Retailers import modems and universities organize sessions that teach basic use. The market gets ready for consumer service with attention to tariffs and acceptable use."
+  },
+  {
+    "year": 1999,
+    "title": "Public access starts",
+    "details": "Citizens subscribe through local ISPs and the first internet cafés open in busy districts. Home users go online after work and school for mail and browsing. The opening includes a plan to block content that violates local law and the approach is widely communicated. Early adopters help relatives and neighbors install software and drivers."
+  },
+  {
+    "year": 2001,
+    "title": "Independent regulator",
+    "details": "A communications regulator is created with legal and financial independence. It licenses providers and manages spectrum and quality rules for telecom and internet services. Clear processes for complaints and enforcement are introduced for the first time. Competition grows and the consumer focus becomes stronger."
+  },
+  {
+    "year": 2003,
+    "title": "MCIT and e‑government",
+    "details": "The ministry takes national leadership for digital policy and public platforms. The Yesser program standardizes identity payments and data exchange so agencies can move forms and services online. Shared building blocks reduce cost for smaller ministries and municipalities. Citizens begin to complete simple tasks on the web instead of visiting offices."
+  },
+  {
+    "year": 2005,
+    "title": "Mobile internet arrives",
+    "details": "A new mobile operator enters the market and data plans become common in cities. Many families first experience the internet through a phone instead of a desktop computer. Coverage expands along highways and in growing suburbs. Mobile becomes the main engine of new adoption for the rest of the decade."
+  },
+  {
+    "year": 2008,
+    "title": "From 3G to early 4G",
+    "details": "Operators extend 3G coverage and begin pilots for LTE in selected districts. Speeds improve and popular sites add video and mapping services that work well on handheld devices. Backbones are upgraded so traffic peaks can be handled without congestion. The user experience shifts from basic pages to richer applications."
+  },
+  {
+    "year": 2010,
+    "title": "Ten million users",
+    "details": "The number of users passes ten million as broadband and mobile plans fall in price. Social networks and news portals become part of daily life for students and workers. Small firms promote shops and services on the web and accept online payments. The internet starts to influence how people learn and buy."
+  },
+  {
+    "year": 2011,
+    "title": "Research backbones scale",
+    "details": "Universities add capacity and join international research consortia for science and engineering. Large data transfers for simulation and laboratory work become routine. Campus Wi Fi is rolled out and identity services allow access to licensed journals from home. Collaboration tools replace many fax and courier workflows."
+  },
+  {
+    "year": 2015,
+    "title": "Fibre expansion",
+    "details": "Urban fibre reaches more homes and business parks in major cities. New programs target remote areas so gaps in service continue to narrow. Higher speeds allow smooth streaming and cloud backup for families and schools. Enterprises move internal systems to hosted platforms that are easier to maintain."
+  },
+  {
+    "year": 2017,
+    "title": "National Cybersecurity Authority",
+    "details": "A national authority is created to coordinate cybersecurity policy and response. Baseline controls and sector frameworks are published and agencies adopt them. Investment in security operations centers and training grows quickly. Critical infrastructure operators align on incident reporting and drills."
+  },
+  {
+    "year": 2019,
+    "title": "5G goes live",
+    "details": "Commercial 5G service starts in major cities and expands through dense districts. The first focus is capacity for crowded areas and low latency for new enterprise uses. Fixed wireless access is tested as an option where fibre is not available. Device makers release handsets that take advantage of the new network."
+  },
+  {
+    "year": 2020,
+    "title": "Rapid digital shift",
+    "details": "During the pandemic schools companies and ministries move classes and work online. Networks add capacity and platforms for remote learning and telehealth scale rapidly. People adopt digital payments and delivery at a pace not seen before. Many of these habits stay after restrictions ease."
+  },
+  {
+    "year": 2021,
+    "title": "Data and AI programs",
+    "details": "National programs support data sharing and responsible AI across the public sector. Agencies build governance and skills so analytics improve service quality. Training pipelines produce new talent and community events promote best practice. Early projects show gains in processing times and accuracy."
+  },
+  {
+    "year": 2022,
+    "title": "Cloud adoption deepens",
+    "details": "Workloads move to local and regional clouds and new availability zones open. Banks and public bodies adopt cloud after formal risk review and migration planning. Providers invest in data centers and new interconnects across regions. Reliability and scale improve for systems that serve the public every day."
+  },
+  {
+    "year": 2023,
+    "title": "Near universal access",
+    "details": "Internet use reaches almost the entire population and mobile speeds rank among the best worldwide. Attention shifts from basic coverage to the quality of experience in crowded places. Service providers tune backhaul and caching so video and gaming run smoothly. Digital services expand in health travel and payments."
+  },
+  {
+    "year": 2024,
+    "title": "Smart infrastructure pilots",
+    "details": "Projects test connected transport energy and logistics in selected districts. Agencies deploy sensors and platforms that share data in real time. Results are reviewed and procurement frameworks are updated to support scale. Lessons feed into the next buildout phase of urban developments."
+  },
+  {
+    "year": 2025,
+    "title": "Digital phase of Vision 2030",
+    "details": "Government and industry platforms become routine and reliable. AI and cloud are part of day to day operations in many sectors. Workforces develop local skills for security and data engineering. The focus moves to advanced services and sustainable capacity across the country."
+  }
+]
